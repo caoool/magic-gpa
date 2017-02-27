@@ -1,0 +1,50 @@
+template(name='submit')
+  .survey
+    .question
+      p 1/3
+      h3 Please enter you name
+      input.form-control(type='text', placeholder='Name')
+    .question
+      p 2/3
+      h3 How many hours do you study per week?
+      ul
+        li
+          input#q2o1(type='radio', name='q2')
+          label(for='q2o1') I don't study
+          .check
+        li
+          input#q2o2(type='radio', name='q2')
+          label(for='q2o2') 0 - 5 hours
+          .check
+        li
+          input#q2o3(type='radio', name='q2')
+          label(for='q2o3') 5 - 10 hours
+          .check
+        li
+          input#q2o4(type='radio', name='q2')
+          label(for='q2o4') 10 - 15 hours
+          .check
+        li
+          input#q2o5(type='radio', name='q2')
+          label(for='q2o5') 15 - 20 hours
+          .check
+        li
+          input#q2o6(type='radio', name='q2')
+          label(for='q2o6') more than 20 hours
+          .check
+    .question
+      p 3/3
+      h3 How many times do you party per week?
+      .slider
+        .slide.active-slide
+          #q3.dragdealer
+            .handle.green-circle
+              .icon
+          table.scale
+            tr
+              td 0
+              td 1
+              td 2
+              td 3
+              td 4
+              td > 5

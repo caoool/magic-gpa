@@ -1,5 +1,20 @@
 # Magic GPA
 
+> ## Hosted at [magicgpa](http://magicgpa.meteorapp.com)
+
+### Current status
+
+* styled UI for both demo page and submit page
+* submit button on demo (home page) will lead to survey page
+
+### TODOs
+
+* integrate synapticjs
+* link UI with controller
+* link with database
+* display result on demo page
+* UI and UX refinement
+
 ## Resources
 
 > [Meteor](https://www.meteor.com/) is a full stack NodeJS framework that handles both back-end and front-end.  
