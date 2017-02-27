@@ -1,28 +1,34 @@
-Dragdealer = require('dragdealer').Dragdealer
+survey =
+  name: null
+  q1: null
+  q2: 0
 
-# icon = $('.icon')
-# widget = $('.slide')
-# steps = 5
-# s1 = new Dragdealer('q3',
-#   horizontal: true
-#   steps: steps
-#   speed: 0.3
-#   loose: false
-#   animationCallback: (x, y) ->
-#     percent = parseInt(steps * x * 100, 10)
-#     icon.css 'background-position-y': 750 * x * 9 / 10 + 75 + 'px'
-#     return
-# ).setStep(5)
-
-# openWidget = ->
-#   $('.button').click ->
-#     currentSlide = $('.active-slide')
-#     nextSlide = currentSlide.next()
-#     currentSlide.fadeOut(600).removeClass 'active-slide'
-#     nextSlide.fadeIn(600).addClass 'active-slide'
-#     return
-#   return
+nullChecker = (obj) ->
+  for k, v of obj
+    return true if v == null
+  return false
 
 Template.submit.onRendered ->
-  # openWidget()
-  new Dragdealer 'q3'
+  Dragdealer = require('dragdealer').Dragdealer
+  new Dragdealer 'q2',
+    horizontal: true
+    steps: 6
+    speed: 0.3
+    loose: false
+    callback: (x, y) ->
+      survey.q2 = x
+
+Template.submit.events
+  'change #name': (e) ->
+    survey.name = e.target.value
+
+  'click .q1': (e) ->
+    survey.q1 = e.target.value
+
+  'click #submit': (e) ->
+    e.preventDefault()
+    if nullChecker(survey)
+      toastr.error 'Please fill all questions', 'Missing inputs'
+    else
+      Surveys.insert survey
+      Router.go '/'

@@ -15,6 +15,9 @@ body
     border-bottom-left-radius 0px
     border-bottom-right-radius 0px
 
+    .qnum
+      color lightgrey
+
     input[type=text]
       // color white
       font-size 1.35em
@@ -170,109 +173,50 @@ body
         box-shadow: 0 8px 6px -6px rgba(0,0,0,.3);
     }
 
-    @keyframes iconIn
-    {
-        0%
-        {
-            transform: translateY(40px) scale(0);
-        }
-        70%
-        {
-            transform: translateY(-10px) scale(1.3);;
-        }
-        100%
-        {
-            transform: translateY(0px) scale(1);;
-        }
-    }
-
-
-
-    @keyframes iconOut
-    {
-        0%
-        {
-            transform: translateY(0px) scale(1);
-        }
-        100%
-        {
-            transform: translateY(50px) scale(0);
-        }
-    }
-
-    .dragdealer .green-circle .icon
-    {
-        position: absolute;
-        top: -100px;
-        left: -22px;
-
-        width: 75px;
-        height: 75px;
-
-        transform: scale(0);
-        animation: iconOut .3s 1.3s backwards;
-        animation-delay: 1s;
-
-        color: white;
-        border-radius: 50%;
-        background: #25bda8;
-        background-image: url(http://321zeno.com/misc/rating/faces.jpg);
-        background-position-x: -.5px;
-        background-position-y: 0;
-    }
-
-    .dragdealer.active .green-circle .icon
-    {
-        transform: scale(1);
-        transform: translateY(0px) scale(1);
-        animation: iconIn .3s forwards;
-    }
-
-    .dragdealer .green-circle .icon:after
-    {
-        position: absolute;
-        bottom: -10px;
-        left: 50%;
-
-        width: 0;
-        height: 0;
-        margin-left: -10px;
-
-        content: '';
-
-        border-width: 15px 10px 0 10px;
-        border-style: solid;
-        border-color: #25bda8 transparent transparent transparent;
-    }
-
     .scale
-    {
-        width: 100%;
-        margin-top: 20px;
-    }
+      width 100%
+      margin-top 20px
 
     .scale td
-    {
-        position: relative;
-
-        width: 10%;
-
-        text-align: center;
-    }
+      position relative
+      width 10%
+      text-align center
 
     .scale td:after
-    {
-        position: absolute;
-        z-index: 5;
-        top: -40px;
-        left: 50%;
+      position absolute
+      z-index 5
+      top -40px
+      left 50%
 
-        width: 10px;
-        height: 10px;
-        margin-left: -6px;
+      width 10px
+      height 10px
+      margin-left -6px
 
-        content: '';
+      content ''
 
-        border-radius: 50%;
-        background-color: #bcbec0;
-    }
+      border-radius 50%
+      background-color #bcbec0
+
+    .base
+      position absolute
+      z-index -1
+      height 16px
+      margin 20px auto 0 auto
+      left 0
+      right 0
+      max-width 800px
+      background #20ab98
+      border-radius 50px
+
+  .submit
+    margin-top 50px
+    padding 30px
+
+    button
+      background #F1FBF9
+      color #25bda8
+      font-size 60px
+      height 100px
+      border-radius 100px
+      border-color #F1FBF9
+      border-width 5px

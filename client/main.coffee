@@ -1,2 +1,11 @@
 Template.main.onRendered ->
-  $('#qrcode').qrcode 'http://localhost:3000/submit'
+  $('#qrcode').qrcode
+    text: Meteor.absoluteUrl() + '/submit'
+
+Template.main.events
+  'click #clear': (e) ->
+    Meteor.call 'surveys.drop'
+
+Template.main.helpers
+  surveys: ->
+    Surveys.find()

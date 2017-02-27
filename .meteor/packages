@@ -28,3 +28,4 @@ stylus@2.513.8
 twbs:bootstrap
 iron:router
 steeve:jquery-qrcode
+chrismbeckett:toastr
