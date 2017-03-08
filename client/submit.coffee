@@ -1,3 +1,23 @@
+synaptic = require 'synaptic'
+Neuron = synaptic.Neuron
+Layer = synaptic.Layer
+Network = synaptic.Network
+Trainer = synaptic.Trainer
+Architect = synaptic.Architect
+network = new Architect.Perceptron 2, 3, 1
+trainer = new Trainer network
+trainingSet = [
+  {
+    input: [1,0]
+    output: [1]
+  }
+  {
+    input: [0,1]
+    output: [0]
+  }
+]
+trainer.train trainingSet
+
 survey =
   name: null
   q1: null
@@ -23,12 +43,16 @@ Template.submit.events
     survey.name = e.target.value
 
   'click .q1': (e) ->
-    survey.q1 = e.target.value
+    survey.q1 = Number(e.target.value)
 
   'click #submit': (e) ->
     e.preventDefault()
     if nullChecker(survey)
       toastr.error 'Please fill all questions', 'Missing inputs'
     else
-      Surveys.insert survey
-      Router.go '/'
+      gpa = network.activate([survey.q1, survey.q2])
+      gpa = parseFloat(gpa).toFixed 3
+      survey.gpa = parseFloat(gpa) + 3
+      id = Surveys.insert survey
+      url = '/result/' + id
+      Router.go url

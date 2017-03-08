@@ -1,0 +1,19 @@
+template(name='result')
+  .result
+    h1 Your Result
+      i.pull-right.fa.fa-star
+    with student
+      .content
+        .name
+          p #{name}
+          hr
+        .gpa
+          p #{gpa}
+      .feedback
+        a#accurate.btn.btn-primary.pull-right
+          i.fa.fa-check
+        a#not_accurate.btn.btn-warning.pull-right
+          i.fa.fa-times
+        a#share.btn.btn-primary.pull-right Share
+    
+    .base

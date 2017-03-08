@@ -19,4 +19,20 @@ template(name='main')
         each surveys
           .col-sm-12.col-md-4.col-lg-3
             .result
-              h1 #{name}
+              .content
+                .name
+                  p #{name}
+                  hr
+                .gpa
+                  if share
+                    p #{gpa}
+                  else
+                    p hidden
+                if $exists accurate
+                  if accurate
+                    i.fa.fa-check-circle
+                  else
+                    i.fa.fa-times-circle
+                else
+                  i.fa.fa-question-circle
+                  

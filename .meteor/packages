@@ -21,7 +21,6 @@ shell-server@0.2.1            # Server-side component of the `meteor shell` comm
 autopublish@1.0.7             # Publish all data to the clients (for prototyping)
 insecure@1.0.7                # Allow all DB writes from clients (for prototyping)
 
-steeve:synaptic
 coffeescript@1.11.1_4
 mquandalle:jade
 stylus@2.513.8
@@ -29,3 +28,5 @@ twbs:bootstrap
 iron:router
 steeve:jquery-qrcode
 chrismbeckett:toastr
+fortawesome:fontawesome
+raix:handlebar-helpers

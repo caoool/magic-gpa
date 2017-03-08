@@ -7,6 +7,8 @@
   "dependencies": {
     "babel-runtime": "^6.18.0",
     "dragdealer": "^0.9.9",
-    "meteor-node-stubs": "~0.2.0"
+    "fast-csv": "^2.4.0",
+    "meteor-node-stubs": "~0.2.0",
+    "synaptic": "^1.0.8"
   }
 }

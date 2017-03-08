@@ -3,3 +3,6 @@ Router.route '/', ->
 
 Router.route '/submit', ->
   @render 'submit'
+
+Router.route '/result/:id', ->
+  @render 'result'
