@@ -53,6 +53,14 @@ for (i in entries) {
   }
 }
 
+fs.writeFile("./trainer.json", JSON.stringify(trainingSet, null, 4), (err) => {
+  if (err) {
+    console.error(err);
+    return;
+  };
+  console.log("File has been created");
+});
+
 network = new Architect.Perceptron(14, 10, 1)
 network.trainer.train(trainingSet)
 json = network.toJSON()

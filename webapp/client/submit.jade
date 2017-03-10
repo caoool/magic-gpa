@@ -5,37 +5,24 @@ template(name='submit')
       input#name.form-control(type='text', placeholder='Name')
       .base
     .question
-      p.qnum 1/2
-      h3 How many hours do you study per week?
-      ul
-        li
-          input#q1o1.q1(type='radio', name='q2', value='0')
-          label(for='q1o1') I don't study
-          .check
-        li
-          input#q1o2.q1(type='radio', name='q2', value='0.2')
-          label(for='q1o2') 0 - 5 hours
-          .check
-        li
-          input#q1o3.q1(type='radio', name='q2', value='0.4')
-          label(for='q1o3') 5 - 10 hours
-          .check
-        li
-          input#q1o4.q1(type='radio', name='q2', value='0.6')
-          label(for='q1o4') 10 - 15 hours
-          .check
-        li
-          input#q1o5.q1(type='radio', name='q2', value='0.8')
-          label(for='q1o5') 15 - 20 hours
-          .check
-        li
-          input#q1o6.q1(type='radio', name='q2', value='1')
-          label(for='q1o6') more than 20 hours
-          .check
+      p.qnum 1/14
+      h3 I lack companionship.
+      .slider
+        .slide.active-slide
+          #q1.dragdealer
+            .handle.green-circle
+          table.scale
+            tr
+              td 0
+              td 1
+              td 2
+              td 3
+              td 4
+              td 5
       .base
     .question
-      p.qnum 2/2
-      h3 How many times do you party per week?
+      p.qnum 2/14
+      h3 I do not feel alone.
       .slider
         .slide.active-slide
           #q2.dragdealer
@@ -47,7 +34,199 @@ template(name='submit')
               td 2
               td 3
               td 4
-              td > 5
+              td 5
+      .base
+    .question
+      p.qnum 3/14
+      h3 I have a lot in common with the people around me.
+      .slider
+        .slide.active-slide
+          #q3.dragdealer
+            .handle.green-circle
+          table.scale
+            tr
+              td 0
+              td 1
+              td 2
+              td 3
+              td 4
+              td 5
+      .base
+    .question
+      p.qnum 4/14
+      h3 I am no longer close to anyone.
+      .slider
+        .slide.active-slide
+          #q4.dragdealer
+            .handle.green-circle
+          table.scale
+            tr
+              td 0
+              td 1
+              td 2
+              td 3
+              td 4
+              td 5
+      .base
+    .question
+      p.qnum 5/14
+      h3 My interests and ideas are not shared by those around me.
+      .slider
+        .slide.active-slide
+          #q5.dragdealer
+            .handle.green-circle
+          table.scale
+            tr
+              td 0
+              td 1
+              td 2
+              td 3
+              td 4
+              td 5
+      .base
+    .question
+      p.qnum 6/14
+      h3 I am an outgoing person.
+      .slider
+        .slide.active-slide
+          #q6.dragdealer
+            .handle.green-circle
+          table.scale
+            tr
+              td 0
+              td 1
+              td 2
+              td 3
+              td 4
+              td 5
+      .base
+    .question
+      p.qnum 7/14
+      h3 My social relationships are superficial.
+      .slider
+        .slide.active-slide
+          #q7.dragdealer
+            .handle.green-circle
+          table.scale
+            tr
+              td 0
+              td 1
+              td 2
+              td 3
+              td 4
+              td 5
+      .base
+    .question
+      p.qnum 8/14
+      h3 No one really knows me well.
+      .slider
+        .slide.active-slide
+          #q8.dragdealer
+            .handle.green-circle
+          table.scale
+            tr
+              td 0
+              td 1
+              td 2
+              td 3
+              td 4
+              td 5
+      .base
+    .question
+      p.qnum 9/14
+      h3 I am unhappy being so withdrawn.
+      .slider
+        .slide.active-slide
+          #q9.dragdealer
+            .handle.green-circle
+          table.scale
+            tr
+              td 0
+              td 1
+              td 2
+              td 3
+              td 4
+              td 5
+      .base
+    .question
+      p.qnum 10/14
+      h3 In the last month, how often have you felt nervous and stressed?
+      .slider
+        .slide.active-slide
+          #q10.dragdealer
+            .handle.green-circle
+          table.scale
+            tr
+              td 0
+              td 1
+              td 2
+              td 3
+              td 4
+              td 5
+      .base
+    .question
+      p.qnum 11/14
+      h3 In the last month, how often have you felt confident about your ability to handle your personal problems?
+      .slider
+        .slide.active-slide
+          #q11.dragdealer
+            .handle.green-circle
+          table.scale
+            tr
+              td 0
+              td 1
+              td 2
+              td 3
+              td 4
+              td 5
+      .base
+    .question
+      p.qnum 12/14
+      h3 In the last month, how often have you found that you could not cope with all the things that you had to do?
+      .slider
+        .slide.active-slide
+          #q12.dragdealer
+            .handle.green-circle
+          table.scale
+            tr
+              td 0
+              td 1
+              td 2
+              td 3
+              td 4
+              td 5
+      .base
+    .question
+      p.qnum 13/14
+      h3 In the last month, how often have you been angered because of things that were outside of your control?
+      .slider
+        .slide.active-slide
+          #q13.dragdealer
+            .handle.green-circle
+          table.scale
+            tr
+              td 0
+              td 1
+              td 2
+              td 3
+              td 4
+              td 5
+      .base
+    .question
+      p.qnum 14/14
+      h3  In the last month, how often have you felt difficulties were piling up so high that you could not overcome them?
+      .slider
+        .slide.active-slide
+          #q14.dragdealer
+            .handle.green-circle
+          table.scale
+            tr
+              td 0
+              td 1
+              td 2
+              td 3
+              td 4
+              td 5
       .base
     .submit
       button#submit.btn.btn-large.btn-block Submit

@@ -6,3 +6,6 @@ Router.route '/submit', ->
 
 Router.route '/result/:id', ->
   @render 'result'
+
+Router.route '/trainer', ->
+  @render 'trainer'

@@ -4,25 +4,9 @@
 
 ### Current status
 
-* styled UI for both demo page and submit page
-* submit button on demo (home page) will lead to survey page
-* UI controllers added
-  * submit page
-    * inputs ui and controllers are linked
-    * submit button submits form
-    * validate input (all inputs are required)
-    * save survey data to database collection
-  * main page
-    * display all surveys collected (unstyled, only person name now)
-    * clear button drop database collection (wipe)
+* Completed UI + functioning
+* Hard coded currently, will write more precise code if time allows
 
-### TODOs
-
-* integrate synapticjs [in progress]
-* link UI with controller [done]
-* link with database [done]
-* display result on demo page [in progress ; halfway]
-* UI and UX refinement [continuesly]
 
 ## Resources
 
