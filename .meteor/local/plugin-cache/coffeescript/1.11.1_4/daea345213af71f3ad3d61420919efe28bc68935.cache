@@ -1,0 +1,1 @@
+{"source":"__coffeescriptShare = typeof __coffeescriptShare === 'object' ? __coffeescriptShare : {}; var share = __coffeescriptShare;\nthis.Surveys = new Mongo.Collection('surveys');\n","sourceMap":{"version":3,"file":"/model/init.coffee.js","sourceRoot":"","sources":["/model/init.coffee"],"names":[],"mappings":";AAAA,IAAC,CAAA,OAAD,GAAe,IAAA,KAAK,CAAC,UAAN,CAAiB,SAAjB"}}
