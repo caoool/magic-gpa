@@ -1,1 +1,0 @@
-{"version":3,"sources":["meteor://💻app/model/server.coffee","meteor://💻app/model/surveys.coffee"],"names":[],"mappings":";;;;;;;;;AAAA,MAAM,CAAC,OAAP,CACE;EAAA,gBAAgB;WACd,OAAO,CAAC,MAAR,CAAe,EAAf;EADc,CAAhB;CADF;;;;;;;;;;;;;ACAA,IAAC,QAAD,GAAe,SAAK,CAAC,UAAN,CAAiB,SAAjB;;AAEf,OAAO,CAAC,KAAR,CACE;EAAA,QAAQ;WAAA;AAAG,aAAO;IAAV;EAAA,QAAR;CADF","file":"/app.js"}

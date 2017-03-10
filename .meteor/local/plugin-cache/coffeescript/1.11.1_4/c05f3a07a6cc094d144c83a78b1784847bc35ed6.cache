@@ -1,1 +1,0 @@
-{"source":"__coffeescriptShare = typeof __coffeescriptShare === 'object' ? __coffeescriptShare : {}; var share = __coffeescriptShare;\n\n","sourceMap":{"version":3,"file":"/client/result.coffee.js","sourceRoot":"","sources":["/client/result.coffee"],"names":[],"mappings":";"}}
