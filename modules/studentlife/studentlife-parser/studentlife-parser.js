@@ -17,7 +17,7 @@ function handlerConstructor(callback, attribute) {
         value = attribute["choice"].indexOf(data[key]);
         data[key] = value === -1 ? data[key] : value; });
     Object.keys(data).forEach( (key) => {
-      value = parseFloat(data[key]);
+      value = parseFloat(data[key]) / attribute["max"];
       value = isNaN(value) ? data[key] : value;
       if(key != "uid" && ignore.indexOf(key) === -1) {
         keys.push(key);

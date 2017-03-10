@@ -27,6 +27,13 @@ The format of the attributes should be:
     {
       /* required */
       "file": "path/to/file",
+
+      /* required 
+       * integer to indicate maximum value
+       * this is for normalization
+       * should be identical to length of "choice" if it exists
+       */
+      "max": 3,
   
       /* optional
        * this is the list of possible responses
