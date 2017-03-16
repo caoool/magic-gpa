@@ -26,5 +26,5 @@ output.forEach(
 
 output.forEach( (data) => mae += Math.abs(data.neural - data.actual)/4 );
 
-console.log( mae/output.length/4 );
+console.log( mae/output.length );
 
